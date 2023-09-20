@@ -5,9 +5,10 @@
     <meta charset="utf8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Веб-разработчик компании VK</title>
+    <title>Паша</title>
+    
 </head>
 
 <body>
@@ -15,17 +16,18 @@
         <div class="container">
             <nav class="main-menu">
                 <ul>
-                    <li><a href="about.html">Обо мне</a></li>
-                    <li><a href="skills.html">Навыки</a></li>
-                    <li><a href="technologies.html">Технологии</a></li>
+                    <li class="menu"><a href="#about">Обо мне</a></li>
+                    <li class="menu"><a href="#skills">Навыки</a></li>
+                    <li class="menu"><a href="#technologies">Технологии</a></li>
                 </ul>
             </nav>
             <div class="text-center">
-                <h1 class="text-upper">Иванов Иван Иванович</h1>
-                <p class="w-50 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eos, aspernatur.
+                <h1 class="text-upper">Дуров Павел Валерьевич</h1>
+                <p class="foot mx-auto">
+                    Российский предприниматель и программист, долларовый миллиардер. Один из создателей социальной сети «ВКонтакте» и одноимённой компании, 
+                    кроссплатформенного мессенджера Telegram и других проектов. Бывший генеральный директор «ВКонтакте» (2006—2014). 
+                    В студенческие годы — лауреат стипендий Президента РФ и Правительства РФ, трёхкратный лауреат Потанинской стипендии.
                 </p>
-                <a class="btn btn-white" href="mailto:ivan@ivanov.ru">Написать мне</a>
             </div>
         </div>
     </header>
@@ -34,46 +36,77 @@
             <section id="about">
                 <h2>Обо мне</h2>
                 <figure class="avatar">
-                    <img height="300px" src="images/person.png" alt="Person">
+                    <img height="300px" src="/images/durov.jpg" alt="Durov">
                 </figure>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum suscipit distinctio eum natus,
-                    obcaecati dolores architecto accusantium earum, repellat beatae consectetur fugit. Natus placeat
-                    nihil, doloribus maiores officia nulla! Totam?
-                </p>
-                <a class="btn" href="about.html">Подробнее</a>
+                    Всем привет, меня зовут Дуров Павел Валерьевич, мне 38 лет. В 2001 году я с отличием окончил Академическую гимназию, в 2006 — филологический факультет Санкт-Петербургского 
+                    государственного университета по специальности «Английская филология и перевод» с красным дипломом, который до сих пор не забрал. Сразу по окончании вуза создал 
+                    «ВКонтакте», крупнейшую на данный момент социальную сеть в России. На 2011 год с состоянием в 7,9 млрд рублей занимал 350-е место в рейтинге российских миллиардеров.</p>
+
+                    <p>Являюсь вегетарианцем и придерживаюсь либертарианских политических взглядов. Меня называют российским Марком Цукербергом, 
+                    а также часто критикуют за эксцентричные выходки и высказывания. 19 ноября 2012 года вышла книга Николая Кононова «Код Дурова», описывающая становление «ВКонтакте» и меня; 
+                    на её экранизацию в этом же году приобрела права компания AR Films.</p>
+                    
+                    <p>В 2014 году я покинул Россию и заявил, что не собирается возвращаться.</p>
+                    
+                    <p>С 2016 года вхожу в список 200 богатейших бизнесменов России Forbes. За четыре года моё состояние увеличилось с $600 млн до $3,4 млрд. В 2020 году я занимаю 
+                    30-е место в рейтинге по России и 565-е место в мире. В 2021 году журнал Forbes включил меня на 112-е место среди мировых миллиардеров с состоянием $17,2 млрд.</p>
+                    
+                    <p>В 2022 году среди российских миллиардеров я занял третье место с состояним $15,1 млрд, став единственным бизнесменом ТОП-10 не из промышленного сектора.</p>
+                    
+                    <p>В 2022 году я попросил не называть себя российским миллиардером.</p>
             </section>
             <section id="skills">
                 <h2>Навыки</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum suscipit distinctio eum natus,
-                    obcaecati dolores architecto accusantium earum, repellat beatae consectetur fugit. Natus placeat
-                    nihil, doloribus maiores officia nulla! Totam?
-                </p>
-                <a class="btn" href="skills.html">Подробнее</a>
+                <ul>
+                   <li>Программирование: Опыт в разработке программного обеспечения и мобильных приложений, включая знание языков программирования, таких как C++, Python, Java, Swift и PHP</li>
+                   <li>Управление проектами: Навыки управления большими проектами и командами разработчиков, включая планирование, бюджетирование и контроль сроков выполнения</li>
+                   <li>Криптография: Понимание принципов криптографии и разработка систем шифрования для обеспечения безопасности данных</li>
+                   <li>Системная архитектура: Опыт проектирования высоконагруженных систем и инфраструктуры с использованием современных технологий</li>
+                   <li>Коммуникационные навыки: Умение эффективно общаться с командой, пользовательскими сообществами и партнерами</li>
+                   <li>Работа с данными: Анализ данных и разработка алгоритмов машинного обучения для улучшения продуктов и услуг</li>
+                   <li>Блокчейн и криптовалюты: знание на высоком уровне</li>
+                </ul>
             </section>
             <section id="technologies">
                 <h2>Технологии</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum suscipit distinctio eum natus,
-                    obcaecati dolores architecto accusantium earum, repellat beatae consectetur fugit. Natus placeat
-                    nihil, doloribus maiores officia nulla! Totam?
-                </p>
-                <ol class="nemain-menu">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ol>
-                <a class="btn" href="technologies.html">Подробнее</a>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название технологии</th>
+                            <th>Уровень владения</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Swift</td>
+                            <td>10</td>
+                        <tr>
+                            <td>PHP</td>
+                            <td>10</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>
+        
     </main>
-
+    
     <footer class="footer">
-        <div class="container">
-            &copy; Иванов И. И.
-        </div>
+            <a href="https://vk.com/durov" class="vk">&copy;Дуров</a>
+            <p><a href="#top" class="scroll-to-top">Наверх</a></p>
+            <p class="text-center"><a class="btn btn-white" href="mailto:durov@vk.com">Написать мне</a></p>
     </footer>
 </body>
 
 </html>
+<a href=""></a>
