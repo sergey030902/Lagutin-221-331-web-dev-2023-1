@@ -1,4 +1,4 @@
-# Лабы на хостинге
+# Лабораторные работы на хостинге
 * [lab1](http://lab1.std-2186.ist.mospolytech.ru/)
 * [lab2](http://lab2.std-2186.ist.mospolytech.ru/)
 * [lab3](http://lab3.std-2186.ist.mospolytech.ru/)
