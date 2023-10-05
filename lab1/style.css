@@ -31,7 +31,7 @@ li:last-child
     color: rgb(255, 255, 255);
     padding: 20px 0;
     font-size: 1rem;
-    font-weight:bold;
+    font-weight: bold;
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,6 @@ li:last-child
 {
     text-decoration: none;
     color:white;
-    
 }
 
 p
@@ -152,8 +151,4 @@ th, td {
 
 a:visited {
     color: rgb(255, 255, 255);
-}
-
-.vk {
-    text-decoration: none;
 }
