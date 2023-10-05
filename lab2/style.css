@@ -1,3 +1,10 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(237, 238, 240);
+    user-select: none;      /*выделение*/
+}
+
+
 .label {
     display: block; /*текст с новой строки*/
     font-weight: bold;
@@ -10,7 +17,7 @@
 
 .container {
     font-size: 20px;
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -23,15 +30,42 @@ input, textarea, select {
 }
 
 .form-group{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.btn{
-    background-color: blue;
+.send{
+    background-color: #3770B1;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block;
+    padding: 7px;
+    /* border-radius: 7px; */
+    display: inline;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
+    border: 0;
+}
+
+.reset {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    /* border-radius: 7px; */
+    display: inline;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 0;
+}
+
+.who-told-you-about-us {
+    border-width: 2px;
+    border-image: linear-gradient(to top left, #5900ff, #ffc400, #4ea339);
+    border-image-slice: 1;
+    margin: 0;
+}
+
+#message {
+    border-width: 2px;
+    border-image: linear-gradient(to bottom right, #00ffdd, #ff00c8, #200c7c);
+    border-image-slice: 1;
+    width: 100%;
+    box-sizing: border-box;
 }

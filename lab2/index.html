@@ -6,24 +6,29 @@
     <title>Форма обратной связи</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 class="text-center">Форма обратной связи</h1>
-    <div class="container">
 
-    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> <!--передать файл, а не название-->
-        
+    <header>
+        <h1 class="text-center">Форма обратной связи</h1>
+    </header>
+
+<body>
+    
+    <div class="container">
+    
+    
+    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data" ; form onreset="return confirm('Вы уверены, что хотите сбросить данные?')"> <!--передать файл, а не название-->
             <div class="form-group">
                 <label class="label" for="fio">ФИО</label>
-                <input type="text" id="fio" name="fio" placeholder="Введите ФИО" value="Иванов Иван Иванович" readonly>
+                <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович">     <!-- value - уже напечаттный текст, readonly - заблокировать изменение-->
             </div>
         
         <div class="form-group">
             <label class="label" for="email">Электронная почта</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
         </div>
 
-    <fieldset disabled>
-            <legend>Как вы о нас узнали?</legend>
+    <fieldset class="who-told-you-about-us">     <!--можно отключить с помощью disabled-->
+            <legend>Кто вам сказал о нас?</legend>
         
         <div class="form-group">
             <input type="radio" name="source" id="friends" value="friends">
@@ -31,8 +36,12 @@
         </div>
 
         <div class="form-group">
-            <input type="radio" name="source" id="ads" value="ads" checked>
-            <label class="label" for="ads">Реклама</label>
+            <input type="radio" name="source" id="ads-mtr" value="ads-mtr" checked>
+            <label class="label" for="ads-mtr">Реклама в метро</label>
+        </div>
+        <div class="form-group">
+            <input type="radio" name="source" id="ads-int" value="ads-int">
+            <label class="label" for="ads-int">Реклама в интернете</label>
         </div>
     </fieldset>
 
@@ -43,20 +52,20 @@
             <option value="2" selected>Предложение</option>
         </select>
     </div>
-    <div class="form-group">
+    <div class="form-group tarea">
         <label class="label" for="message">Текст сообщения</label>
-        <textarea name="" id="message" cols="57" rows="10" placeholder="Введите текст сообщения"></textarea>
+        <textarea name="" id="message" cols="58" rows="7" placeholder="Введите текст сообщения"></textarea>
     </div>
     <div class="form-group">
         <label class="label" for="file">Вложение</label>
-        <input type="file" name="file" id="file">
+        <input type="file" name="file" id="file" multiple>
     </div>
     <div class="form-group">
-        <input type="checkbox" name="agree" id="agree" checked>
+        <input type="checkbox" name="agree" id="agree" required>
         <label class="label display-inline" for="agree">Даю согласие на обработку персональных данных</label>
     </div>
-        <button class="btn" type="submit">Send</button>
-        <button class="btn" type="reset">Reset</button>
+        <button class="send" type="submit">Send</button>
+        <button class="reset" type="reset">Reset</button>
     </form>
     </div>
 </body>
