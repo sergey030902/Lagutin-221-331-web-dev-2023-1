@@ -1,100 +1,71 @@
 body {
-    margin: 0;
-    height: 100vh;
-    background-image: url(images/new-york.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(237, 238, 240);
+    user-select: none;      /*выделение*/
 }
 
-.sign-in-all {
-    background-color: rgb(237, 238, 240);
-    padding: 1rem;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    
-}
 
 .label {
     display: block; /*текст с новой строки*/
-    margin-top: 10px;
-}
-
-.sign-group{
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-
-form {
-    display: block;
-    margin-top: 0em;
+.display-inline {
+    display: inline;
 }
 
-.send {
-    background-color: #3770B1;
-    color: white;
-    border: 0px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-    
+.container {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#password, #login {
-    height: 2em;
-    width: 385px;
-    border-radius: 10px;
-    border: 0;
-    padding-left: 10px;
-}
-
-button {
-    width: 22em;
-}
-
-button:hover {
-    background-color: #487fbd;
-}
-
-button:active {
-    position: relative;
-    top: 1px;
-}
-
-.to-form {
-    background-color: #60bc60;
-    color: white;
-    border: 0;
-    padding: 10px 114px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    justify-content: center;
-    align-items: center;
+.text-center {
     text-align: center;
 }
 
-.to-form:hover {
-    background-color: #6dc26d
+input, textarea, select {
+    font-size: inherit;
 }
 
-.to-form:active {
-    position: relative;
-    top: 1px;
+.form-group{
+    margin-bottom: 10px;
 }
 
-.sign-in {
-    padding: 10px;
+.send{
+    background-color: #3770B1;
+    color: white;
+    padding: 7px;
+    /* border-radius: 7px; */
+    display: inline;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 0;
+}
+
+.reset {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    /* border-radius: 7px; */
+    display: inline;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 0;
+}
+
+.who-told-you-about-us {
+    border-width: 2px;
+    border-image: linear-gradient(to top left, #5900ff, #ffc400, #4ea339);
+    border-image-slice: 1;
+    margin: 0;
+}
+
+#message {
+    border-width: 2px;
+    border-image: linear-gradient(to bottom right, #00ffdd, #ff00c8, #200c7c);
+    border-image-slice: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
