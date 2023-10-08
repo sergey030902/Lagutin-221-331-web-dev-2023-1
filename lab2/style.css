@@ -1,100 +1,108 @@
 body {
-    margin: 0;
-    height: 100vh;
-    background-image: url(images/new-york.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+  margin: 0;
+  height: 100vh;
+  background-image: url(images/new-york.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .sign-in-all {
-    background-color: rgb(237, 238, 240);
-    padding: 1rem;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    
+  background-color: rgb(237, 238, 240);
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
 }
 
 .label {
-    display: block; /*текст с новой строки*/
-    margin-top: 10px;
+  display: block; /*текст с новой строки*/
+  margin-top: 10px;
 }
 
-.sign-group{
-    margin-bottom: 10px;
+.sign-group {
+  margin-bottom: 10px;
 }
-
 
 form {
-    display: block;
-    margin-top: 0em;
+  display: block;
+  margin-top: 0em;
 }
 
 .send {
-    background-color: #3770B1;
-    color: white;
-    border: 0px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-    
+  background-color: #3770b1;
+  color: white;
+  border: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-#password, #login {
-    height: 2em;
-    width: 385px;
-    border-radius: 10px;
-    border: 0;
-    padding-left: 10px;
+#password,
+#login {
+  height: 2em;
+  width: 385px;
+  border-radius: 10px;
+  border: 0;
+  padding-left: 10px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="checkbox"]:focus,
+button[class="send"]:focus,
+.to-form:focus {
+  outline-color: #0077ff;
+  /*box-shadow: 0 0 7px #3498db; /*тень*/
 }
 
 button {
-    width: 22em;
+  width: 22em;
 }
 
+
 button:hover {
-    background-color: #487fbd;
+  background-color: #487fbd;
 }
 
 button:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 .to-form {
-    background-color: #60bc60;
-    color: white;
-    border: 0;
-    padding: 10px 114px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: #60bc60;
+  color: white;
+  border: 0;
+  padding: 10px 114px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .to-form:hover {
-    background-color: #6dc26d
+  background-color: #6dc26d;
 }
 
 .to-form:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 .sign-in {
-    padding: 10px;
+  padding: 10px;
 }
