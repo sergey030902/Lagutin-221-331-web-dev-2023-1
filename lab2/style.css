@@ -109,3 +109,9 @@ button:active {
 .save {
   padding-left: 7px;
 }
+
+/*автозаполнении*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 16px rgba(20, 216, 230, 0.438) inset; /*цвет фона подсветки*/
+  /*-webkit-text-fill-color: #797a86; /*цвет текста в поле ввода*/
+}
