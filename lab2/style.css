@@ -4,9 +4,9 @@ body {
   background-image: url(images/new-york.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;      /*по строке - по умолчанию*/
+  justify-content: center;  /*x*/
+  align-items: center;    /*y*/
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   user-select: none;
