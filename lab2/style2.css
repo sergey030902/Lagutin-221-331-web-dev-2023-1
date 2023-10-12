@@ -1,71 +1,72 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(237, 238, 240);
-    user-select: none;      /*выделение*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(237, 238, 240);
+  user-select: none; /*выделение*/
 }
 
-
 .label {
-    display: block; /*текст с новой строки*/
-    font-weight: bold;
-    margin-bottom: 10px;
+  display: block; /*текст с новой строки*/
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .display-inline {
-    display: inline;
+  display: inline;
 }
 
 .container {
-    font-size: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
-input, textarea, select {
-    font-size: inherit;
+input,
+textarea,
+select {
+  font-size: inherit;
 }
 
-.form-group{
-    margin-bottom: 10px;
+.form-group {
+  margin-bottom: 10px;
 }
 
-.send{
-    background-color: #3770B1;
-    color: white;
-    padding: 7px;
-    /* border-radius: 7px; */
-    display: inline;
-    margin: 0 auto;
-    font-size: 18px;
-    border: 0;
+.send {
+  background-color: #3770b1;
+  color: white;
+  padding: 7px;
+  /* border-radius: 7px; */
+  display: inline;
+  margin: 0 auto;
+  font-size: 18px;
+  border: 0;
 }
 
 .reset {
-    background-color: black;
-    color: white;
-    padding: 7px;
-    /* border-radius: 7px; */
-    display: inline;
-    margin: 0 auto;
-    font-size: 18px;
-    border: 0;
+  background-color: black;
+  color: white;
+  padding: 7px;
+  /* border-radius: 7px; */
+  display: inline;
+  margin: 0 auto;
+  font-size: 18px;
+  border: 0;
 }
 
 .who-told-you-about-us {
-    border-width: 2px;
-    border-image: linear-gradient(to top left, #5900ff, #ffc400, #4ea339);
-    border-image-slice: 1;
-    margin: 0;
+  border-width: 2px;
+  border-image: linear-gradient(to top left, #5900ff, #ffc400, #4ea339);
+  border-image-slice: 1;
+  margin: 0;
 }
 
 #message {
-    border-width: 2px;
-    border-image: linear-gradient(to bottom right, #00ffdd, #ff00c8, #200c7c);
-    border-image-slice: 1;
-    width: 100%;
-    box-sizing: border-box;
+  border-width: 2px;
+  border-image: linear-gradient(to bottom right, #00ffdd, #ff00c8, #200c7c);
+  border-image-slice: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
