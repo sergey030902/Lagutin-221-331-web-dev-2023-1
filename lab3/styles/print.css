@@ -1,0 +1,9 @@
+.header,
+.footer,
+.sidebar,
+.scroll-top-btn {
+  display: none;
+}
+.products {
+  justify-content: center;
+}

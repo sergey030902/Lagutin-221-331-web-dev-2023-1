@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать | ВКонтакте</title>
+    <link rel="icon" href="images/faviconnew.ico" type="icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="images/VKontakte_logo2006.svg.png" alt="">
+        </a>
+        <a id="switch" href="">Switch to English</a>
+    </header>
+    <main>
+        <div class="container">
+            <div id="main-page">
+                <div class="sidebar">
+                    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                        <div class="sign-group">
+                            <label class="label" for="login">Телефон или email</label>
+                            <input type="text" name="login" autocomplete="username" required>
+                        </div>
+                        <div class="sign-group">
+                            <label class="label" for="pass">Пароль</label>
+                            <input type="password" name="pass" autocomplete="current-password" required>
+                        </div>
+                        <div class="sign-group">
+                            <button class="send" type="submit">Войти</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="page-content">
+                    <h1 class="welcome">Добро пожаловать</h1>
+                    <p><b>ВКонтакте</b> – универсальное средство для общения и поиска друзей и одноклассников, которым
+                        ежедневно пользуются десятки миллионов человек.</p>
+                    <h2>Моментальная регистрация</h2>
+                    <div class="login">
+                        <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                            <div class="login-group">
+                                <input type="text" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="login-group">
+                                <input type="text" name="familia" placeholder="Ваша фамилия" required>
+                            </div>
+                            <div class="login-group login-btn">
+                                <button class="sub-button" type="submit">
+                                    <span class="sub">Зарегистрироваться</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <h2>В чём поможет ВКонтакте?</h2>
+                    <ul class="listing">
+                        <li>Найти людей, с которыми Вы когда-либо учились, работали или отдыхали.</li>
+                        <li>Узнать больше о людях, которые Вас окружают, и найти новых друзей.</li>
+                        <li>Всегда оставаться в контакте с теми, кто Вам дорог.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+  margin: 0px;
+  font-family: tahoma, arial, verdana, sans-serif, "Lucida Sans";
+  font-size: 11px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 42vw;
+}
+
+header {
+  margin: 0 auto;
+  width: 44vw;
+  height: 40px;
+  background: #4d71a9;
+  display: flex;
+  border-radius: 0 0 7px 7px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px 0 2px;
+  overflow: hidden;
+}
+
+#logo {
+  width: 125px;
+  margin: 7px 10px;
+  height: 21px;
+}
+
+#switch:hover {
+  background: #3b5c90;
+}
+
+#switch {
+  font-weight: bold;
+  font-size: 11px;
+  color: rgb(232, 239, 247);
+  text-shadow: rgb(65, 99, 137) 0 1px 0;
+  padding: 12px 10px 15px;
+}
+
+#main-page {
+  display: flex;
+  justify-content: start;
+  font-weight: bold;
+  box-sizing: border-box;
+  position: sticky;
+  flex-shrink: 0;
+  line-height: 160%;
+}
+
+.sign-group > input {
+  width: 100px;
+}
+
+.label {
+  display: block;
+  padding-bottom: 4px;
+  color: #607387;
+}
+
+.sign-group {
+  padding-top: 6px;
+}
+
+#sidebar {
+  display: flex;
+  align-self: flex-start;
+}
+
+#page-content {
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+.sub {
+  padding-right: 25px;
+  background: url(/lab3/images/backlink.gif) no-repeat right -127px;
+}
+
+.sub-button {
+  margin: 15px 0 8px;
+  background: #5d81a7;
+  width: 177px;
+  border: none;
+  padding: 7px 2px 8px 16px;
+  border-radius: 3px;
+  color: white;
+}
+
+.login-group {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+input {
+  padding: 3px;
+}
+
+.login-btn {
+  padding: 0;
+}
+
+.sub-button:hover {
+  background: #6b91ba;
+}
+
+.sub-button:active {
+  background: #3b5c90;
+}
+
+h1 {
+  margin: 0;
+  font-size: 11px;
+  color: #607387;
+}
+
+p {
+  font-weight: normal;
+}
+
+h2 {
+  color: #45668e;
+  font-size: 1.18em;
+}
+
+.listing {
+  font-weight: normal;
+  list-style: none;
+}
+
+ul li::before {
+  content: "\25A0";
+  color: #758eac;
+  margin-right: 8px;
+  font-size: 0.6rem;
+}
+
+.welcome {
+  padding: 7px;
+  background-color: #e9edf1;
+}
+
+@media screen and (max-width: 900px) {
+  #main-page,
+  header {
+    flex-direction: column;
+  }
+
+  .sign-group {
+    text-align: center;
+  }
+}
