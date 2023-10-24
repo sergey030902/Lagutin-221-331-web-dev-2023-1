@@ -1,0 +1,171 @@
+body {
+  margin: 0px;
+  font-family: tahoma, arial, verdana, sans-serif, "Lucida Sans";
+  font-size: 11px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 42vw;
+  width: 835px;
+}
+
+header {
+  margin: 0 auto;
+  width: 846px;
+  height: 40px;
+  background: #4d71a9;
+  display: flex;
+  border-radius: 0 0 7px 7px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px 0 2px;
+  overflow: hidden;
+}
+
+header > p {
+  cursor: pointer;
+}
+
+#logo {
+  width: 125px;
+  margin: 10px;
+  height: 21px;
+}
+
+#switch:hover,
+header > p:hover {
+  background: #3b5c90;
+}
+
+#switch {
+  font-weight: bold;
+  color: rgb(232, 239, 247);
+  text-shadow: rgb(65, 99, 137) 0 1px 0;
+  padding: 12px 10px 15px;
+}
+
+#main-page {
+  display: flex;
+  justify-content: start;
+  font-weight: bold;
+  box-sizing: border-box;
+  position: sticky;
+  flex-shrink: 0;
+  line-height: 180%;
+}
+
+.sign-group {
+  padding-top: 6px;
+}
+
+.sidebar {
+  position: relative;
+  top: -38px;
+}
+
+.sidebar > p {
+  margin: 8px;
+  color: #4d71a9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#page-content {
+  margin: 0.8rem 1rem 0.5rem 0.8rem;
+}
+
+h1,
+.frst > p {
+  margin: 0;
+  font-size: 11px;
+  color: #607387;
+}
+
+p {
+  font-weight: normal;
+}
+
+header > p {
+  font-weight: bold;
+  color: rgb(232, 239, 247);
+  text-shadow: rgb(65, 99, 137) 0 1px 0;
+  padding: 12px 10px 15px;
+}
+
+h2 {
+  color: #45668e;
+  font-size: 1.18em;
+}
+
+#search {
+  border-radius: 2px;
+  border: none;
+  padding: 3px 0 3px 7px;
+}
+
+.frst {
+  margin: 0 0 0 117px;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px 0 2px;
+  overflow: hidden;
+  background-color: #e9edf1;
+  padding: 0 7px;
+  border-left: 2px solid #bbc7d3;
+  border-right: 2px solid #bbc7d3;
+}
+
+.pageandcontent {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  border: 2px solid #bbc7d3;
+  border-top: none;
+}
+
+.content {
+  flex: 3;
+}
+
+.nameanduniver {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #main-page,
+  header {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .sign-group {
+    text-align: center;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    padding: 3vw;
+  }
+}

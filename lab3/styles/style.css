@@ -11,11 +11,12 @@ a {
 .container {
   margin: 0 auto;
   width: 42vw;
+  width: 835px;
 }
 
 header {
   margin: 0 auto;
-  width: 44vw;
+  width: 846px;
   height: 40px;
   background: #4d71a9;
   display: flex;
@@ -28,7 +29,7 @@ header {
 
 #logo {
   width: 125px;
-  margin: 7px 10px;
+  margin: 10px;
   height: 21px;
 }
 
@@ -38,7 +39,6 @@ header {
 
 #switch {
   font-weight: bold;
-  font-size: 11px;
   color: rgb(232, 239, 247);
   text-shadow: rgb(65, 99, 137) 0 1px 0;
   padding: 12px 10px 15px;
@@ -61,11 +61,15 @@ header {
 .label {
   display: block;
   padding-bottom: 4px;
-  color: #607387;
+  color: #4d71a9;
 }
 
 .sign-group {
   padding-top: 6px;
+}
+
+.btn {
+  margin-top: 6px;
 }
 
 #sidebar {
@@ -83,19 +87,20 @@ header {
 }
 
 .sub-button {
-  margin: 15px 0 8px;
-  background: #5d81a7;
+  margin: 12px 0 8px;
+  background: #4d71a9;
   width: 177px;
   border: none;
   padding: 7px 2px 8px 16px;
   border-radius: 3px;
   color: white;
+  cursor: pointer;
 }
 
 .login-group {
   margin: 0 auto;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 input {
@@ -146,13 +151,47 @@ ul li::before {
   background-color: #e9edf1;
 }
 
+.send {
+  background: #4d71a9;
+  border: none;
+  padding: 7px 38px;
+  border-radius: 3px;
+  color: white;
+}
+
+.send:hover {
+  background: #6b91ba;
+}
+
+.send:active {
+  background: #3b5c90;
+}
+
 @media screen and (max-width: 900px) {
   #main-page,
   header {
     flex-direction: column;
   }
 
+  header {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
   .sign-group {
     text-align: center;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    padding: 2vw;
   }
 }

@@ -21,19 +21,17 @@
         <div class="container">
             <div id="main-page">
                 <div class="sidebar">
-                    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
-                        <div class="sign-group">
-                            <label class="label" for="login">Телефон или email</label>
-                            <input type="text" name="login" autocomplete="username" required>
-                        </div>
-                        <div class="sign-group">
-                            <label class="label" for="pass">Пароль</label>
-                            <input type="password" name="pass" autocomplete="current-password" required>
-                        </div>
-                        <div class="sign-group">
-                            <button class="send" type="submit">Войти</button>
-                        </div>
-                    </form>
+                    <div class="sign-group">
+                        <label class="label" for="login">Телефон или email</label>
+                        <input type="text" name="login" autocomplete="username" required>
+                    </div>
+                    <div class="sign-group">
+                        <label class="label" for="pass">Пароль</label>
+                        <input type="password" name="pass" autocomplete="current-password" required>
+                    </div>
+                    <div class="sign-group btn">
+                        <a class="send" href="index2.html">Войти</a>
+                    </div>
                 </div>
                 <div id="page-content">
                     <h1 class="welcome">Добро пожаловать</h1>
