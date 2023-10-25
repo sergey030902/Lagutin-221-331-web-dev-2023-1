@@ -1,9 +1,9 @@
-.header,
-.footer,
+header,
+.frst,
 .sidebar,
-.scroll-top-btn {
+.login,
+.photo-line,
+#page-content > p,
+#switch {
   display: none;
-}
-.products {
-  justify-content: center;
 }

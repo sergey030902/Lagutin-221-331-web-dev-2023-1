@@ -11,7 +11,7 @@ a {
 .container {
   margin: 0 auto;
   width: 42vw;
-  width: 835px;
+  width: 836px;
 }
 
 header {
@@ -52,7 +52,6 @@ header > p:hover {
 #main-page {
   display: flex;
   justify-content: start;
-  font-weight: bold;
   box-sizing: border-box;
   position: sticky;
   flex-shrink: 0;
@@ -65,7 +64,7 @@ header > p:hover {
 
 .sidebar {
   position: relative;
-  top: -38px;
+  top: -20px;
 }
 
 .sidebar > p {
@@ -77,6 +76,13 @@ header > p:hover {
 
 #page-content {
   margin: 0.8rem 1rem 0.5rem 0.8rem;
+}
+
+#page-content > p {
+  line-height: 140%;
+  color: #4d71a9;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 h1,
@@ -109,9 +115,9 @@ h2 {
 }
 
 .frst {
-  margin: 0 0 0 117px;
-  width: 700px;
-  height: 40px;
+  margin: 0 0 0 118px;
+  width: 704px;
+  height: 31px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,16 +125,12 @@ h2 {
   overflow: hidden;
   background-color: #e9edf1;
   padding: 0 7px;
-  border-left: 2px solid #bbc7d3;
-  border-right: 2px solid #bbc7d3;
 }
 
 .pageandcontent {
   display: flex;
   flex: 1;
   justify-content: space-around;
-  border: 2px solid #bbc7d3;
-  border-top: none;
 }
 
 .content {
@@ -139,6 +141,63 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding-right: 10px;
+}
+
+.first {
+  display: inline-block;
+  width: 200px;
+  color: #777;
+  padding-bottom: 5px;
+}
+
+.second {
+  display: inline-block;
+  width: 270px;
+  margin: 0;
+  color: #2b587a;
+}
+
+.post {
+  display: flex;
+}
+
+.photo-line {
+  background: #e9edf1;
+  width: 485px;
+  padding: 5px 0 5px 3px;
+  color: #45668e;
+  font-weight: bold;
+}
+
+.mini-photo {
+  max-height: 50px;
+  padding-top: 7px;
+}
+
+.name {
+  padding-left: 10px;
+  color: #45668e;
+  font-weight: bold;
+}
+
+.name-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-text > p {
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+
+.avatarka {
+  max-height: 200px;
+}
+
+.imgpost {
+  max-width: 300px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 900px) {

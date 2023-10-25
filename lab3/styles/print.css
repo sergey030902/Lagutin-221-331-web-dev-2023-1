@@ -1,9 +1,5 @@
-.header,
-.footer,
 .sidebar,
-.scroll-top-btn {
+.login,
+#switch {
   display: none;
-}
-.products {
-  justify-content: center;
 }
