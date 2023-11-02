@@ -206,6 +206,11 @@ h2 {
     flex-direction: column;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     width: 100vw;
     border-radius: 0;
@@ -219,12 +224,31 @@ h2 {
     text-align: center;
   }
 
-  html,
-  body {
-    overflow-x: hidden;
+  .pageandcontent {
+    display: block;
+  }
+
+  .content {
+    margin: 0.8rem;
   }
 
   .sidebar {
     padding: 3vw;
+  }
+
+  .sidebar {
+    position: relative;
+    top: -20px;
+  }
+
+  .sidebar > p {
+    margin: 8px;
+    color: #4d71a9;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .frst {
+    margin: 0;
   }
 }
