@@ -1,0 +1,63 @@
+* {
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calc-container {
+    border: 1px solid black;
+    width: 251px;
+    height: 250px;
+    box-shadow: 0 0 20px;
+}
+
+.screen {
+    width: 251px;
+    height: 53px;
+    background-color: #1a212a;
+    color: white;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+.digits {
+    width: 151px;
+    border-right: 1px solid black;
+}
+
+.other { 
+    width: 100px;
+}
+
+.digits, .other {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #2e333b;
+}
+
+.key {
+    color: white;
+    background-color: #1a212a;
+}
